@@ -1,0 +1,198 @@
+{
+  "estudiantes": [
+    {
+      "id": "9bd7",
+      "nombre": "Billalbert",
+      "apellido": "Martinez",
+      "cedula": 30566797,
+      "email": "BillalbertCode@gmail.com",
+      "seccion": 1410111,
+      "materias": [
+        {
+          "nombre": "Responsive Web Design",
+          "nota": 10,
+          "profesor": "FreeCode"
+        }
+      ]
+    },
+    {
+      "id": "13c7",
+      "nombre": "Carlos",
+      "apellido": "Arturo",
+      "cedula": "11072273",
+      "email": "Carlosarturo@gmail.com",
+      "seccion": "ninguna",
+      "materias": [
+        {
+          "nombre": "Ingles",
+          "nota": 5,
+          "profesor": "Ana"
+        },
+        {
+          "nombre": "Quimica",
+          "nota": 10,
+          "profesor": "Alvarado"
+        },
+        {
+          "nombre": "Fisica",
+          "nota": 9,
+          "profesor": "Julio"
+        },
+        {
+          "nombre": "Cocina",
+          "nota": 66,
+          "profesor": "azuca"
+        }
+      ]
+    },
+    {
+      "id": "784c",
+      "nombre": "will",
+      "apellido": "smith",
+      "cedula": "414225",
+      "email": "wilyesmi@gmail.com",
+      "seccion": "casa",
+      "materias": [
+        {
+          "nombre": "Comer",
+          "nota": 10,
+          "profesor": "Pedro"
+        }
+      ]
+    },
+    {
+      "id": "a89c",
+      "nombre": "Kylian",
+      "apellido": "Mbappe",
+      "cedula": "480009",
+      "email": "Mbappe@psg.com",
+      "seccion": "PSG",
+      "materias": [
+        {
+          "nombre": "Madrid",
+          "nota": 1,
+          "profesor": "Sergio "
+        }
+      ]
+    },
+    {
+      "id": "edb0",
+      "nombre": "Daniel",
+      "apellido": "Sáncheza",
+      "cedula": "45678",
+      "email": "aaaaa@2222.com",
+      "seccion": "real masdri",
+      "materias": []
+    },
+    {
+      "nombre": "new",
+      "apellido": "nuevo",
+      "cedula": "30666",
+      "email": "test@gmail.com",
+      "seccion": "1405"
+    },
+    {
+      "nombre": "new2",
+      "apellido": "nuevo",
+      "cedula": "30666",
+      "email": "test@gmail.com",
+      "seccion": "1405"
+    },
+    {
+      "nombre": "new2",
+      "apellido": "nuevo",
+      "cedula": "30666",
+      "email": "test@gmail.com",
+      "seccion": "1405"
+    },
+    {
+      "nombre": "new3",
+      "apellido": "nuevo3",
+      "cedula": "333",
+      "email": "test@gmail.com",
+      "seccion": "333"
+    },
+    {
+      "nombre": "new3",
+      "apellido": "nuevo3",
+      "cedula": "333",
+      "email": "test@gmail.com",
+      "seccion": "333"
+    },
+    {
+      "nombre": "new4",
+      "apellido": "nuevo4",
+      "cedula": "444",
+      "email": "test@gmail.com",
+      "seccion": "444"
+    },
+    {
+      "nombre": "new4",
+      "apellido": "nuevo4",
+      "cedula": "444",
+      "email": "test@gmail.com",
+      "seccion": "444"
+    },
+    {
+      "nombre": "new5",
+      "apellido": "nuevo5",
+      "cedula": "30566797",
+      "email": "test@gmail.com",
+      "seccion": "1405"
+    },
+    {
+      "nombre": "new5",
+      "apellido": "nuevo5",
+      "cedula": "30566797",
+      "email": "test@gmail.com",
+      "seccion": "1405"
+    },
+    {
+      "nombre": "new6",
+      "apellido": "nuevo6",
+      "cedula": "30566797",
+      "email": "test@gmail.com",
+      "seccion": "1405"
+    },
+    {
+      "nombre": "new7",
+      "apellido": "nuevo7",
+      "cedula": "7777",
+      "email": "test@gmail.com",
+      "seccion": "77777",
+      "id": "2e70512f-226c-4bda-8687-102cbdb2b92b"
+    },
+    {
+      "nombre": "Billalbert",
+      "apellido": "Martinez",
+      "cedula": "1234567890",
+      "email": "aaaaa@2222.com",
+      "seccion": "1405",
+      "id": "d8604518-6133-4fcc-adcf-7137628f7eb6"
+    },
+    {
+      "nombre": "Billalberto",
+      "apellido": "Martinez",
+      "cedula": "1234567890",
+      "email": "aaaaa@2222.com",
+      "seccion": "1405",
+      "id": "aba0ec0d-a691-4685-b582-2458239b7941"
+    },
+    {
+      "nombre": "Carlos",
+      "apellido": "gustavo ",
+      "cedula": "566797",
+      "email": "test@gmail.com",
+      "seccion": "1405",
+      "id": "5937a605-2c31-481e-985c-15b630ee5dea"
+    },
+    {
+      "nombre": "Carlotres",
+      "apellido": "gustavo ",
+      "cedula": "566797",
+      "email": "test@gmail.com",
+      "seccion": "1405",
+      "id": "c2593439-afc2-4329-866e-20631453d715"
+    }
+  ]
+}
