@@ -215,6 +215,21 @@
           "profesor": "Miyamoto"
         }
       ]
+    },
+    {
+      "nombre": "El que sea",
+      "apellido": "Gustavo",
+      "cedula": "1234",
+      "email": "grimjow@fornicaras.com",
+      "seccion": "432",
+      "id": "570403f6-45a8-49d4-ae69-5cf59dbcc15a",
+      "materias": [
+        {
+          "nombre": "BabySaid",
+          "nota": 20,
+          "profesor": "Maneskin"
+        }
+      ]
     }
   ]
 }

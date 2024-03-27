@@ -11,19 +11,23 @@ export const startServer = (options) => {
     const { port, public_path = 'public' } = options
     const app = express()
     // Silenciado ya que genera una estatica
-    // app.use(express.static(public_path))
     app.use(bodyParser.json());
     app.use(bodyParser.text());//quest for delete
     app.use(cors()); // desinstalar al terminar
+    // Publicas
+    app.use(express.static(public_path))
     app.get('/', (req, res) => {
-        // const indexPath = path.resolve(public_path,'index.html')
-        // res.sendFile(indexPath)
-        res.send("hello World")
+        const indexPath = path.resolve(public_path,'index.html')
+        res.sendFile(indexPath)
+        // res.sendFile(jsPath1)
+        // res.sendFile(jsPath2)
+
     })
-    // app.get('/Panel', (req, res) => {
-    //     const indexPath = path.resolve(public_path, './PanelUsuario/index.html')
-    //     res.sendFile(indexPath)
-    // })
+    app.get('/Panel', (req, res) => {
+        const indexPath = path.resolve(public_path, './PanelUsuario/index.html')
+        res.sendFile(indexPath)
+    })
+
     // Registro Y busqueda del estudiante
     app.get('/estudiantes', (req, res) => {
         res.json(data)
