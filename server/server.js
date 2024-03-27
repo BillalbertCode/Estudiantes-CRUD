@@ -30,25 +30,7 @@ export const startServer = (options) => {
         console.log(data.estudiantes)
     })
     app.post('/estudiantes', (req, res) => {
-        // Parse the request body
-        //  const body = req.body;
-        //  // Modify the JSON data
-        //  data.estudiantes.push(body);
-        //  // Send the updated JSON data
-        //  res.json(data);
-        // fs.writeFile('./database/db.json', JSON.stringify(body, null, 2), (err) => {
-        //     if (err) {
-        //         // Handle the error
-        //         res.status(500).send('Error writing file');
-        //         console.log(err)
-        //     } else {
-        //         // Set the HTTP status code to 201
-        //         res.status(201);
-        //         // Send the response body
-        //         res.send('Estudiante added successfully');
-        //     }
-        // });
-        //  res.status(201)
+
         const body = req.body
         const id = crypto.randomUUID();
         fs.readFile('./database/db.json', 'utf-8', (err, data) => {
@@ -86,36 +68,72 @@ export const startServer = (options) => {
             res.send('User not found');
         }
     })
+
     app.patch('/estudiantes/:id', (req, res) => {
-        const estudiantes = data.estudiantes
-        const body = req.body
-        
+        const id = req.params.id;
+        const body = req.body;
+    
         fs.readFile('./database/db.json', 'utf-8', (err, data) => {
             if (err) {
-                res.status(500).send('Error reading file')
-                console.log(`error readFile: ${err} `)
+                res.status(500).send('Error reading file');
+                console.log(`Error reading file: ${err}`);
             } else {
-                const user = estudiantes.find(u => u.id === req.params.id) = JSON.parse(data)
-                
-                const jsonData = JSON.parse(data)
-                jsonData.estudiantes.push({ ...body, id })
-                fs.writeFile('./database/db.json', JSON.stringify(jsonData, null, 2), (err) => {
-                    if (err) {
-                        res.status(500).send('Error Writing file')
-                        console.log(`error writeFile: ${err}`)
-                    } else {
-                        res.status(201)
-                        const objeto = {
-                            name: "objeto",
-                            id: id
+                const jsonData = JSON.parse(data);
+                const index = jsonData.estudiantes.findIndex(estudiante => estudiante.id === id);
+    
+                if (index === -1) {
+                    // Estudiante not found
+                    res.status(404).json({ error: 'Estudiante not found' });
+                    console.log(`Estudiante not found`);
+                } else {
+                    // Update the specified field
+                    Object.assign(jsonData.estudiantes[index], body);
+    
+                    fs.writeFile('./database/db.json', JSON.stringify(jsonData, null, 2), (err) => {
+                        if (err) {
+                            res.status(500).send('Error writing file');
+                            console.log(`Error writing file: ${err}`);
+                        } else {
+                            res.status(200).json(jsonData.estudiantes[index]);
+                            console.log(`Updated estudiante: ${JSON.stringify(jsonData.estudiantes[index])}`);
                         }
-                        res.json(objeto);
-                    }
-                })
+                    });
+                }
             }
-        })
-
-    })
+        });
+    });
+    app.put('/estudiantes/:id', (req, res) => {
+        const id = req.params.id;
+      
+        fs.readFile('./database/db.json', 'utf-8', (err, data) => {
+          if (err) {
+            res.status(500).send('Error reading file');
+            console.log(`Error reading file: ${err}`);
+          } else {
+            const jsonData = JSON.parse(data);
+            const index = jsonData.estudiantes.findIndex(estudiante => estudiante.id === id);
+      
+            if (index !== -1) {
+              const updatedEst = req.body;
+              updatedEst.id = id; // asegurarse de incluir el id
+              jsonData.estudiantes[index] = updatedEst;
+      
+              fs.writeFile('./database/db.json', JSON.stringify(jsonData, null, 2), (err) => {
+                if (err) {
+                  res.status(500).send('Error writing file');
+                  console.log(`Error writing file: ${err}`);
+                } else {
+                  res.status(200).json(updatedEst);
+                  console.log(`Updated estudiante: ${JSON.stringify(updatedEst)}`);
+                }
+              });
+            } else {
+              res.status(404).json({ error: 'Estudiante not found' });
+              console.log(`Estudiante not found`);
+            }
+          }
+        });
+      });
     app.listen(port, () => {
         console.log(`escuchando desde ${port}`)
     })

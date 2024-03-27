@@ -155,12 +155,19 @@
       "seccion": "1405"
     },
     {
-      "nombre": "new7",
-      "apellido": "nuevo7",
-      "cedula": "7777",
+      "nombre": "Juan",
+      "apellido": "Martinez",
+      "cedula": "666",
       "email": "test@gmail.com",
-      "seccion": "77777",
-      "id": "2e70512f-226c-4bda-8687-102cbdb2b92b"
+      "seccion": "1405",
+      "id": "2e70512f-226c-4bda-8687-102cbdb2b92b",
+      "materias": [
+        {
+          "nombre": "Responsive Web Design",
+          "nota": 20,
+          "profesor": "FreeCode"
+        }
+      ]
     },
     {
       "nombre": "Billalbert",
@@ -193,6 +200,21 @@
       "email": "test@gmail.com",
       "seccion": "1405",
       "id": "c2593439-afc2-4329-866e-20631453d715"
+    },
+    {
+      "nombre": "Best",
+      "apellido": "NumberOne ",
+      "cedula": "30566797",
+      "email": "NumberOne@gmail.com",
+      "seccion": "1405",
+      "id": "74b38e1c-7890-45fd-af4d-569b71bf939c",
+      "materias": [
+        {
+          "nombre": "Diciplina",
+          "nota": 10,
+          "profesor": "Miyamoto"
+        }
+      ]
     }
   ]
 }
