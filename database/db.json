@@ -85,76 +85,6 @@
       "materias": []
     },
     {
-      "nombre": "new",
-      "apellido": "nuevo",
-      "cedula": "30666",
-      "email": "test@gmail.com",
-      "seccion": "1405"
-    },
-    {
-      "nombre": "new2",
-      "apellido": "nuevo",
-      "cedula": "30666",
-      "email": "test@gmail.com",
-      "seccion": "1405"
-    },
-    {
-      "nombre": "new2",
-      "apellido": "nuevo",
-      "cedula": "30666",
-      "email": "test@gmail.com",
-      "seccion": "1405"
-    },
-    {
-      "nombre": "new3",
-      "apellido": "nuevo3",
-      "cedula": "333",
-      "email": "test@gmail.com",
-      "seccion": "333"
-    },
-    {
-      "nombre": "new3",
-      "apellido": "nuevo3",
-      "cedula": "333",
-      "email": "test@gmail.com",
-      "seccion": "333"
-    },
-    {
-      "nombre": "new4",
-      "apellido": "nuevo4",
-      "cedula": "444",
-      "email": "test@gmail.com",
-      "seccion": "444"
-    },
-    {
-      "nombre": "new4",
-      "apellido": "nuevo4",
-      "cedula": "444",
-      "email": "test@gmail.com",
-      "seccion": "444"
-    },
-    {
-      "nombre": "new5",
-      "apellido": "nuevo5",
-      "cedula": "30566797",
-      "email": "test@gmail.com",
-      "seccion": "1405"
-    },
-    {
-      "nombre": "new5",
-      "apellido": "nuevo5",
-      "cedula": "30566797",
-      "email": "test@gmail.com",
-      "seccion": "1405"
-    },
-    {
-      "nombre": "new6",
-      "apellido": "nuevo6",
-      "cedula": "30566797",
-      "email": "test@gmail.com",
-      "seccion": "1405"
-    },
-    {
       "nombre": "Juan",
       "apellido": "Martinez",
       "cedula": "666",
@@ -228,6 +158,73 @@
           "nombre": "BabySaid",
           "nota": 20,
           "profesor": "Maneskin"
+        }
+      ]
+    },
+    {
+      "nombre": "50cent",
+      "apellido": "FivethinCent",
+      "cedula": "520",
+      "email": "50cent@gmalil.com",
+      "seccion": "5000",
+      "id": "1b69b678-fc4c-45fe-8447-2806ca63127a",
+      "materias": [
+        {
+          "nombre": "PunPun",
+          "nota": 1234,
+          "profesor": "Holas"
+        }
+      ]
+    },
+    {
+      "nombre": "modificacion",
+      "apellido": "modification",
+      "cedula": "123",
+      "email": "test@gmail.com",
+      "seccion": "333",
+      "id": "75557476-1f2b-484a-adb4-353de3c28de2",
+      "materias": [
+        {
+          "nombre": "Kevo ",
+          "nota": 100,
+          "profesor": "meGusta"
+        }
+      ]
+    },
+    {
+      "nombre": "Test",
+      "apellido": "Testing",
+      "cedula": "1111",
+      "email": "test@gmail.com",
+      "seccion": "0101",
+      "id": "bdf40cc1-9cf8-4eb7-a2a9-fd07f6a81325",
+      "materias": []
+    },
+    {
+      "nombre": "Billalbert",
+      "apellido": "Martinez",
+      "cedula": "1405",
+      "email": "Billalbert9@hotmail.com",
+      "seccion": "1405",
+      "id": "eaddccf8-c6c6-46b5-8c58-8f59f733d93c"
+    },
+    {
+      "nombre": "New",
+      "apellido": "Class",
+      "cedula": "111",
+      "email": "NumberOne@gmail.com",
+      "seccion": "111",
+      "id": "192f8af4-6655-434f-a279-e7d419746bc1",
+      "materias": [
+        {
+          "nombre": "Responsive Web Design",
+          "nota": 20,
+          "profesor": "FreeCode"
+        },
+        {
+          "nombre": "Billalbert",
+          "nota": 10,
+          "profesor": "FreeCode"
         }
       ]
     }
