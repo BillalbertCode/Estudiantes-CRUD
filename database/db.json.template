@@ -1,0 +1,19 @@
+{
+  "estudiantes": [
+    {
+      "id": "9bd7",
+      "nombre": "Billalbert",
+      "apellido": "Martinez",
+      "cedula": 30566797,
+      "email": "BillalbertCode@gmail.com",
+      "seccion": 1410111,
+      "materias": [
+        {
+          "nombre": "Responsive Web Design",
+          "nota": 10,
+          "profesor": "FreeCode"
+        }
+      ]
+    }
+    ]
+}
